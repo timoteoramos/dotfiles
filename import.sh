@@ -1,0 +1,8 @@
+#!/bin/sh
+SCRIPT_ROOT=$(cd `dirname "$0"` && pwd)
+
+mkdir -p ~/.config/nvim
+
+[ -f ~/.vimrc ] && cp ~/.vimrc $SCRIPT_ROOT/vim/unix.vimrc
+[ -f ~/.config/nvim/init.vim ] && cp ~/.config/nvim/init.vim $SCRIPT_ROOT/neovim/unix.init.vim
+[ -f ~/.config/nvim/settings.vim ] && cp ~/.config/nvim/settings.vim $SCRIPT_ROOT/neovim/
