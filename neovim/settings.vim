@@ -23,6 +23,10 @@ au BufRead,BufNewFile * match BadWhitespace /\s\+$/
 " Fix backspace issue with :term
 set bs=2
 
-" vim-airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail'
+" lightline
+set laststatus=2
+set noshowmode
+
+let g:lightline = {
+\ 'colorscheme': 'one',
+\}
