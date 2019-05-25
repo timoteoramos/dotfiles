@@ -5,6 +5,7 @@ These are my personal configurations for some useful tools. Use `.sh` scripts fo
 
   * Export: copy from this repository to the default locations
   * Import: copy from the default locations to this repository
+  * Update: download some components to your environment
 
 General Notes
 -------------
