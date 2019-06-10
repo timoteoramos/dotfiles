@@ -9,3 +9,4 @@ mkdir -p ~/.config/nvim
 [ -f ~/.config/nvim/ginit.vim ] && cp ~/.config/nvim/ginit.vim $SCRIPT_ROOT/neovim/unix.ginit.vim
 [ -f ~/.config/nvim/init.vim ] && cp ~/.config/nvim/init.vim $SCRIPT_ROOT/neovim/unix.init.vim
 [ -f ~/.config/nvim/settings.vim ] && cp ~/.config/nvim/settings.vim $SCRIPT_ROOT/neovim/
+[ -f ~/.zshrc ] && cp ~/.zshrc $SCRIPT_ROOT/zsh/zshrc
