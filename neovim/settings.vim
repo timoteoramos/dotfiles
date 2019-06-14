@@ -23,6 +23,9 @@ au BufRead,BufNewFile * match BadWhitespace /\s\+$/
 " Fix backspace issue with :term
 set bs=2
 
+" Always show tabline
+set showtabline=2
+
 " lightline
 set laststatus=2
 set noshowmode
