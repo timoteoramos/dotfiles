@@ -1,8 +1,11 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="agnoster"
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_FIXTERM=true
 
 plugins=(
+	autopep8
 	celery
 	django
 	encode64
@@ -10,6 +13,7 @@ plugins=(
 	fbterm
 	git
 	jsontools
+	last-working-dir
 	npm
 	pip
 	python
@@ -18,4 +22,3 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-

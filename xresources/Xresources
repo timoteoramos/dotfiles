@@ -58,4 +58,4 @@ st.borderpx: 0
 st.cursorshape: 1
 st.font: Hack Nerd Font Mono:pixelsize=12:antialias=true:autohint=true;
 st.termname: xterm-256color
-st.shell: tmux
+st.shell: zsh
