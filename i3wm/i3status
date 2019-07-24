@@ -1,0 +1,50 @@
+## Base16 OceanicNext
+# Author: https://github.com/voronianski/oceanic-next-color-scheme
+#
+# You can use these variables anywhere in the i3status configuration file.
+
+general {
+  output_format = "i3bar"
+  colors = true
+  interval = 5
+  color_good = "#99C794"
+  color_bad = "#EC5f67"
+  color_degraded = "#FAC863"
+}
+
+order += "cpu_usage"
+order += "disk /"
+order += "wireless wlan0"
+order += "battery 0"
+order += "volume master"
+order += "tztime local"
+
+cpu_usage {
+  format = "CPU: %usage"
+}
+
+disk "/" {
+  format = "Root: %avail"
+}
+
+wireless wlan0 {
+  format_up = "Wi-Fi: %essid (IP %ip / %bitrate) %quality"
+  format_down = "Wi-Fi: down"
+}
+
+battery 0 {
+  format = "Battery %percentage"
+  path = "/sys/class/power_supply/BAT0/uevent"
+  low_threshold = 10
+}
+
+volume master {
+  format = "Volume: %volume"
+  device = "default"
+  mixer = "Master"
+  mixer_idx = 0
+}
+
+tztime local {
+  format = "%a %b %_d %Y %l:%M%p"
+}
