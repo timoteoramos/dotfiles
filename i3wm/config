@@ -133,6 +133,7 @@ bindsym $mod+d exec rofi -show drun
 bindsym $mod+q exec rofi -show run
 
 # Session startup programs
+exec --no-startup-id /usr/bin/xrdb ~/.Xresources
 exec --no-startup-id /usr/bin/keepassxc
 exec --no-startup-id /usr/bin/uget-gtk
 exec --no-startup-id /usr/bin/remmina -i
